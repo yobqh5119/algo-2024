@@ -1,6 +1,7 @@
 # Things to know
   - Is the list ordered? Then we can use binary search
   - binary search is O(logN) because we are getting the half of the given input each step.
+  - condition wise, low is inclusive high is exclusive.
 
 # Pseudo Code
   search(arr,low,high)

@@ -4,10 +4,11 @@ const binarySearch = (haystack:number[], needle:number): boolean => {
   
   while(low < high) {
     const mediumIndex = Math.floor(low + (high+low)/2)
+    const value = haystack[mediumIndex]
 
-    if (haystack[mediumIndex] > needle){
+    if (value > needle){
       high = mediumIndex
-    } else if (haystack[mediumIndex] < needle) {
+    } else if (value < needle) {
       low = mediumIndex+1
     } else {
       return true
